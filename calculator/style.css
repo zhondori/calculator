@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;background: #232526;
+    background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+.calc {
+    width: 330px;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    padding: 5px;
+}
+input {
+    grid-column: span 4;
+    font-size: 30px;
+    background: #FF512F;
+    background: -webkit-linear-gradient(to right, #F09819, #FF512F);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F09819, #FF512F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 110px;
+    user-select: none!important;
+}
+span {
+    width: 100%;
+    height: 97px;
+    background: #3D3F41;
+    font-size: 28px;
+    line-height: 97px;
+    border: .5px solid #06ff8b;
+    color: #fff;
+    user-select: none;
+    cursor: pointer;
+    font-weight: 300;
+}
+span:active{
+    background: springgreen;
+    color: #000000;
+}
+.calc span.clear {
+    grid-column: span 2;
+    background: crimson;
+}
+.calc span.clear:active{
+    color: #FFF;
+    background: crimson;
+}
+.calc span.plus {
+    grid-row: span 2;
+    height: calc(97px *2);
+    line-height: calc(97px * 2);
+}
+.calc span.equal {
+    grid-column: span 1;
+}
+@media (max-width:576px) {
+    .calc{
+        height: 100%;
+    }
+}

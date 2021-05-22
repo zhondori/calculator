@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form name="calc" class="calc">
+        <input type="text" name="input" readonly>
+        <span onclick="calc.input.value =''" class="clear">C</span>
+        <span onclick="calc.input.value +='/'">/</span>
+        <span onclick="calc.input.value +='-'">-</span>
+        <span onclick="calc.input.value +='7'">7</span>
+        <span onclick="calc.input.value +='8'">8</span>
+        <span onclick="calc.input.value +='9'">9</span>
+        <span onclick="calc.input.value +='*'">x</span>
+        <span onclick="calc.input.value +='4'">4</span>
+        <span onclick="calc.input.value +='5'">5</span>
+        <span onclick="calc.input.value +='6'">6</span>
+        <span onclick="calc.input.value +='+'" class="plus">+</span>
+        <span onclick="calc.input.value +='1'">1</span>
+        <span onclick="calc.input.value +='2'">2</span>
+        <span onclick="calc.input.value +='3'">3</span>
+        <span onclick="calc.input.value +='0'">0</span>
+        <span onclick="calc.input.value +='00'">00</span>
+        <span onclick="calc.input.value +='.'">.</span>
+        <span onclick="calc.input.value = eval(calc.input.value)" class="equal">=</span>
+    </form>
+</body>
+</html>
